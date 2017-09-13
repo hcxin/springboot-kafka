@@ -1,5 +1,6 @@
 package com.chen;
 
+import com.chen.common.util.ToolsUtil;
 import com.chen.message.PayMessage;
 import com.chen.producer.MessageProducer;
 import org.springframework.boot.SpringApplication;
@@ -15,7 +16,7 @@ public class KafkaApplication {
         while (true){
             PayMessage message = new PayMessage();
             message.setFee(1.344f);
-            message.setOrderCode("2873947275884384");
+            message.setOrderCode(ToolsUtil.getNextCode());
             message.setSendTime(System.currentTimeMillis());
             producer.send(message);
             try {
