@@ -1,0 +1,16 @@
+server:
+  port: 8999
+  contextPath : /kafka
+spring:
+  application:
+    name: kafka
+  kafka:
+    bootstrapServers: 192.168.0.195:9092
+    consumer:
+      groupId: myGroup
+      keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+      valueDserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      groupId: myGroup
+      keyDeserializer: org.apache.kafka.common.serialization.StringSerializer
+      valueDserializer: org.apache.kafka.common.serialization.StringSerializer
