@@ -9,7 +9,7 @@
     listeners=PLAINTEXT://192.168.0.195:9092      #使其他主机访问
     auto.create.topics.enable = true       #自动创建topic
 
-3.防火墙开启9092端口
+3.开启9092端口，使外部可以访问。
 
 4.启动kafka：
 
