@@ -1,7 +1,7 @@
 package com.chen.producer;
 
 import com.chen.common.constant.TopicConst;
-import com.chen.message.PayMessage;
+import com.chen.common.message.PayMessage;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.slf4j.Logger;

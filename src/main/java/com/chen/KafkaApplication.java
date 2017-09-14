@@ -1,7 +1,7 @@
 package com.chen;
 
 import com.chen.common.util.ToolsUtil;
-import com.chen.message.PayMessage;
+import com.chen.common.message.PayMessage;
 import com.chen.producer.MessageProducer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
