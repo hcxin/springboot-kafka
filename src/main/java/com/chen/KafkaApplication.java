@@ -15,7 +15,7 @@ public class KafkaApplication {
         MessageProducer producer = applicationContext.getBean(MessageProducer.class);
         while (true){
             PayMessage message = new PayMessage();
-            message.setFee(1.344f);
+            message.setFee(ToolsUtil.getFee());
             message.setOrderCode(ToolsUtil.getNextCode());
             message.setSendTime(System.currentTimeMillis());
             producer.send(message);
