@@ -15,7 +15,7 @@
 4.启动kafka：
 
     cd kafka_2.11-0.11.0.0
-    bin/zookeeper-server-start.sh config/zookeeper.properties   # 先启动zookeeper
-    bin/kafka-server-start.sh config/server.properties  # 启动kafka服务
+    bin/zookeeper-server-start.sh config/zookeeper.properties &  # 先启动zookeeper
+    bin/kafka-server-start.sh config/server.properties & # 启动kafka服务
 
 5.打开项目选择KafkaApplication并运行。
